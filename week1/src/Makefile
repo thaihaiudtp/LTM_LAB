@@ -1,11 +1,12 @@
 CC = gcc
-CFLAGS = -Wall -g -I./model -I./service -I./repository -I./controller
+CFLAGS = -Wall -g -I./model -I./service -I./repository -I./controller -I./util
 
 # Source và Object files
 SRC = main.c \
       service/auth_service.c \
       repository/account_repository.c \
-      controller/menu.c
+      controller/menu.c \
+	  util/log.c
 OBJ = $(SRC:.c=.o)
 
 # Tên chương trình
